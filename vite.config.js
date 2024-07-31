@@ -10,7 +10,9 @@ import viteCompression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default ({ mode }) =>
+  
   defineConfig({
+    base:'./',
     plugins: [
       vue(),
       AutoImport({
@@ -111,8 +113,11 @@ export default ({ mode }) =>
         },
       },
     },
+    
     build: {
       minify: "terser",
+      assetsPublicPath: './',
+      publicPath: './',
       terserOptions: {
         compress: {
           pure_funcs: ["console.log"],
