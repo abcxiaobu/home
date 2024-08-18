@@ -23,5 +23,10 @@
     "icon": "Cloud",
     "name": "图库",
     "link": "https://imgs.xiaobu.xyz"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "网盘",
+    "link": "https://cloud.xiaobu.xyz"
   }
 ]
